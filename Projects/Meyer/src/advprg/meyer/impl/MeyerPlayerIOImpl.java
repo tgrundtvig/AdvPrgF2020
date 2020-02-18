@@ -41,7 +41,14 @@ public class MeyerPlayerIOImpl implements MeyerPlayerIO
     public boolean flip(MeyerRoll claimedRoll, int lifesLeft)
     {
         textIO.put("Lives left: " + lifesLeft + "\n");
-        textIO.put("Previous player claims to have rolled: " + claimedRoll.getName());
+        if(claimedRoll == null)
+        {
+            textIO.put("Previous player claims to have rolled same or above.");
+        }
+        else
+        {
+            textIO.put("Previous player claims to have rolled: " + claimedRoll.getName());
+        }
         textIO.put(". Do you want to lift and see if it is a lie? :");
         return textIO.getYesOrNo();
     }

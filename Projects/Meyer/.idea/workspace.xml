@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6368541-2fea-4c2c-b91d-bc646d3d74e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/advprg/meyer/sync/Illustration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/advprg/meyer/sync/SyncBoxFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/advprg/meyer/run/MeyerGameServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/advprg/meyer/run/MeyerGameServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/advprg/meyer/textgame/TextGameClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/advprg/meyer/textgame/TextGameClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/advprg/meyer/textgame/TextGameServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/advprg/meyer/textgame/TextGameServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/advprg/meyer/textio/GUITextIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/advprg/meyer/textio/GUITextIO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/advprg/meyer/textio/ISimpleTextIO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/advprg/meyer/textio/ITextIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/advprg/meyer/textio/ITextIO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/advprg/meyer/textio/SysTextIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/advprg/meyer/textio/SysTextIO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/advprg/meyer/textio/TestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/advprg/meyer/textio/TestHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/advprg/meyer/textio/TextIO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/advprg/meyer/textio/TextIOClientSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/advprg/meyer/textio/TextIOClientSocket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/advprg/meyer/textio/TextIOServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/advprg/meyer/textio/TextIOServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/advprg/meyer/impl/MeyerPlayerIOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/advprg/meyer/impl/MeyerPlayerIOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/advprg/meyer/sync/SyncBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/advprg/meyer/sync/SyncBox.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -162,7 +154,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

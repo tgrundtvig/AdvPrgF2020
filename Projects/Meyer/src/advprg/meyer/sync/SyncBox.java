@@ -6,42 +6,29 @@
 package advprg.meyer.sync;
 
 /**
- *
  * @author Tobias Grundtvig
  */
 public class SyncBox<E>
 {
     private E obj = null;
-    
-    public synchronized E get()
+
+    public synchronized E get() throws InterruptedException
     {
-        while(obj == null)
+        while (obj == null)
         {
-            try
-            {
-                wait();
-            } catch (InterruptedException ex)
-            {
-                //Do nothing...
-            }
+            wait();
         }
         E res = obj;
         obj = null;
         notifyAll();
         return res;
     }
-    
-    public synchronized void put(E obj)
+
+    public synchronized void put(E obj) throws InterruptedException
     {
-        while(this.obj != null)
+        while (this.obj != null)
         {
-            try
-            {
-                wait();
-            } catch (InterruptedException ex)
-            {
-                //Do nothing...
-            }
+            wait();
         }
         this.obj = obj;
         notifyAll();
