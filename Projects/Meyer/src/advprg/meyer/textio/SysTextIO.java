@@ -12,7 +12,7 @@ import java.util.Scanner;
  *
  * @author Tobias Grundtvig
  */
-public class SysTextIO implements ISimpleTextIO
+public class SysTextIO implements ITextIO
 {
 
     private final static Scanner keyboard = new Scanner(System.in);

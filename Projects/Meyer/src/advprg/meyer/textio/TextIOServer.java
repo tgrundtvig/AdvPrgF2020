@@ -52,7 +52,7 @@ public class TextIOServer implements Runnable
                     Socket socket = serverSocket.accept();
                     TextIOServerSocket textSocket = new TextIOServerSocket(socket);
                     new Thread(textSocket).start();
-                    handler.handleConnection(new TextIO(textSocket));
+                    handler.handleConnection(textSocket);
                 } catch (SocketException e)
                 {
                     // Nothing to do, this is actually not an error, 
@@ -68,7 +68,7 @@ public class TextIOServer implements Runnable
     }
     
     
-    private class TextIOServerSocket implements ISimpleTextIO, Runnable
+    private class TextIOServerSocket implements ITextIO, Runnable
     {
 
         private final Socket socket;

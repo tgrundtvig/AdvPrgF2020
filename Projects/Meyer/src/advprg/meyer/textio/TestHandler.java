@@ -65,7 +65,7 @@ public class TestHandler implements ITextIOConnectionHandler
         
         for(int i = 0; i < 2; ++i)
         {
-            ISimpleTextIO gui = GUITextIO.createGUI();
+            ITextIO gui = GUITextIO.createGUI();
             gui.put("Starting test\n");
             TextIOClientSocket client = new TextIOClientSocket("localhost", 3337, gui);
             Thread clientThread = new Thread(client);

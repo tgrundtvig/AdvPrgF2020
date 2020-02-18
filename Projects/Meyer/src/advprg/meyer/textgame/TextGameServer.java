@@ -7,9 +7,8 @@ package advprg.meyer.textgame;
 
 
 import advprg.meyer.sync.SyncBox;
-import advprg.meyer.textio.ISimpleTextIO;
 import advprg.meyer.textio.ITextIO;
-import advprg.meyer.textio.TextIO;
+
 
 import java.io.BufferedInputStream;
 import java.io.DataInput;
@@ -59,7 +58,7 @@ public class TextGameServer implements Runnable
                     Socket socket = serverSocket.accept();
                     TextIOServerSocket textSocket = new TextIOServerSocket(socket);
                     new Thread(textSocket).start();
-                    players[index] = new TextIO(textSocket);
+                    players[index] = textSocket;
                     int playersLeft = count - index - 1;
                     if (playersLeft > 0)
                     {
@@ -80,7 +79,7 @@ public class TextGameServer implements Runnable
             //Wait for players to read any final messages...
             try
             {
-                Thread.sleep(10000);
+                Thread.sleep(1000);
             } catch (InterruptedException ex)
             {
                 Logger.getLogger(TextGameServer.class.getName()).log(Level.SEVERE, null, ex);
@@ -97,7 +96,7 @@ public class TextGameServer implements Runnable
         System.out.println("Server stopped!");
     }
 
-    private class TextIOServerSocket implements ISimpleTextIO, Runnable
+    private class TextIOServerSocket implements ITextIO, Runnable
     {
 
         private final Socket socket;

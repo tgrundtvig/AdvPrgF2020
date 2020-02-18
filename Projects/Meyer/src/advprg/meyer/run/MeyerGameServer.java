@@ -9,7 +9,6 @@ import advprg.meyer.textgame.ITextGame;
 import advprg.meyer.textgame.TextGameServer;
 import advprg.meyer.textio.ITextIO;
 import advprg.meyer.textio.SysTextIO;
-import advprg.meyer.textio.TextIO;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +21,7 @@ public class MeyerGameServer implements ITextGame
     public MeyerGameServer(MeyerGameCtrl gameCtrl)
     {
         this.gameCtrl = gameCtrl;
-        this.serverConsole = new TextIO(new SysTextIO());
+        this.serverConsole = new SysTextIO();
     }
 
     @Override

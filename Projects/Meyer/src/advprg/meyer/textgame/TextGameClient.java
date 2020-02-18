@@ -5,10 +5,8 @@
  */
 package advprg.meyer.textgame;
 
-import advprg.meyer.textio.ISimpleTextIO;
 import advprg.meyer.textio.ITextIO;
 import advprg.meyer.textio.SysTextIO;
-import advprg.meyer.textio.TextIO;
 
 import java.io.BufferedInputStream;
 import java.io.DataInput;
@@ -27,9 +25,9 @@ public class TextGameClient implements Runnable
 
     private final String host;
     private final int port;
-    private final ISimpleTextIO io;
+    private final ITextIO io;
 
-    public TextGameClient(String host, int port, ISimpleTextIO io)
+    public TextGameClient(String host, int port, ITextIO io)
     {
         this.host = host;
         this.port = port;
@@ -89,14 +87,12 @@ public class TextGameClient implements Runnable
     
     public static void main(String[] args)
     {
-        //ISimpleTextIO sio = GUITextIO.createGUI();
-        ISimpleTextIO sio = new SysTextIO();
-        ITextIO io = new TextIO(sio);
+        ITextIO io = new SysTextIO();
         io.put("Please enter server ip-adress: ");
         String adr = io.get();
         io.put("\nPlease enter server port: ");
         int port = io.getInteger(0, 65535);
-        TextGameClient client = new TextGameClient(adr, port, sio);
+        TextGameClient client = new TextGameClient(adr, port, io);
         client.run();
     }
 

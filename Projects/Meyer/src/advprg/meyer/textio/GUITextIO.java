@@ -14,7 +14,7 @@ import java.util.logging.Logger;
  *
  * @author kasper
  */
-public class GUITextIO extends javax.swing.JFrame implements ISimpleTextIO
+public class GUITextIO extends javax.swing.JFrame implements ITextIO
 {
 
     static {

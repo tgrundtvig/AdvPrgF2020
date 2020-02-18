@@ -22,9 +22,9 @@ public class TextIOClientSocket implements Runnable
 
     private final String host;
     private final int port;
-    private final ISimpleTextIO io;
+    private final ITextIO io;
 
-    public TextIOClientSocket(String host, int port, ISimpleTextIO io)
+    public TextIOClientSocket(String host, int port, ITextIO io)
     {
         this.host = host;
         this.port = port;
