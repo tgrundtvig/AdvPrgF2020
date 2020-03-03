@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6368541-2fea-4c2c-b91d-bc646d3d74e1" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="a6368541-2fea-4c2c-b91d-bc646d3d74e1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../JavaUtility/src/blocks/basic/examples/SimpleKeyboardConsoleExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaUtility/src/blocks/basic/examples/SimpleKeyboardConsoleExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +23,11 @@
   </component>
   <component name="ProjectId" id="1X1m9f2NOXXxXn28pPgk4kOgx53" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="C:/DevelopmentProjects/legoTrainProject/JavaUtility" />
@@ -37,18 +44,6 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\tgrun\OneDrive - EFIF\CBA\F2020\Avanceret programmering\Projects\Meyer\src\advprg\meyer" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Application.TextGameClient">
     <configuration name="GUITextGameServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -117,8 +112,8 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.GuessANumber" />
       <item itemvalue="Application.GUITextGameServer" />
+      <item itemvalue="Application.GuessANumber" />
       <item itemvalue="Application.MeyerGameServer" />
       <item itemvalue="Application.NotSoCoolGame" />
       <item itemvalue="Application.TextGameClient" />
@@ -155,5 +150,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1583226517873">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1583226517873" />
   </component>
 </project>
